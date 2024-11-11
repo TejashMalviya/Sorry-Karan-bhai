@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry, Karan</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #0077cc;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0077cc;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #0077cc;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hey Karan, I’m Really Sorry</h1>
+        <p>Karan, you’ve been a great friend and have always been there for me, especially during my tough times. I made a mistake yesterday, and I regret it deeply. I didn’t mean to hurt you. Please forgive me for my actions.</p>
+        <button onclick="showMessage()">Please Forgive Me</button>
+        <div id="message" class="message">No matter what, I’m here for you, and I value our friendship more than anything. Let’s move past this together.</div>
+    </div>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById('message');
+            message.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
